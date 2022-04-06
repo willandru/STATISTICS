@@ -1,10 +1,12 @@
 #2.9 
       difference.means <- 2.35
-      test.Statistic <- 2.01
-      standar.error <- difference.means - test.Statistic
+      T.Stat <- 2.01
+      standar.error <- difference.means/T.Stat
       
-      lim_inf <- difference.means - standar.error
-      lim_sup <- difference.means + standar.error
+      cuantil <- qt(0.9, df=18)
+      
+      lim_inf <- difference.means - cuantil*standar.error
+      lim_sup <- difference.means + cuantil*standar.error
       cbind(lim_inf, lim_sup)
 
 #2.20   Vida útil de las bebidas
