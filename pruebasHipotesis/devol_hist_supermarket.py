@@ -1,6 +1,14 @@
 from scipy.stats import norm
 import math 
 
+# Se tiene la tasa historica de devoluciones = 13% de un 
+# supermercado y se tiene que en la ultima semna en una
+# de 250 personas hubieron 22 devoluciones. Se quiere
+# saber si la tasa de
+
+
+
+
 x = 22
 
 n = 250
@@ -18,6 +26,8 @@ np0= n*p0
 nq0 = n*(1-p0)
 
 print('Verificando la condicion de normalidad :', np0, nq0)
+
+
 
 print(norm.ppf(0.05))
 
