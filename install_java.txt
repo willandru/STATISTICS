@@ -1,0 +1,47 @@
+#HowToInstallJDK8 #JDK8 #KaliLinux
+
+Steps:
+
+1. Download JDK8 from oracle web site.
+
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+2.Go to jvm directory
+
+cd /usr/lib/jvm
+
+3.Unzip JDK8 file
+
+sudo tar -xvzf ~/Downloads/jdk-8u301-linux-x64.tar.gz
+
+4.Edit environment varible
+
+sudo nano /etc/environment
+
+5.Add following variables
+
+:/usr/lib/jvm/jdk1.8.0_301/bin:/usr/lib/jvm/jdk1.8.0_301/db/bin:/usr/lib/jvm/jdk1.8.0_301/jre/bin
+
+J2SDKDIR="/usr/lib/jvm/jdk1.8.0_301"
+
+J2REDIR="/usr/lib/jvm/jdk1.8.0_301/jre"
+
+JAVA_HOME="/usr/lib/jvm/jdk1.8.0_301"
+
+DERBY_HOME="/usr/lib/jvm/jdk1.8.0_301/db"
+
+
+5.Update JDK files
+
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.8.0_301/bin/java" 0
+
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.8.0_301/bin/javac" 0
+
+sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0_301/bin/java
+
+sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_301/bin/javac
+
+
+update-alternatives --list java
+
+update-alternatives --list javac
