@@ -1,0 +1,16 @@
+
+HIPOTESIS ALTERNATIVAS:
+
+no son normales
+no son independientes
+no tienen varianza homogenea
+
+H0:
+son normales
+son independientes tienen varianza homogenea
+
+
+si p<alfa:
+NO son normales
+NO son independientes
+NO tienen varianza homogenea
