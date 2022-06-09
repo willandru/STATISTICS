@@ -1,16 +1,27 @@
 
 HIPOTESIS ALTERNATIVAS:
-
 no son normales
 no son independientes
 no tienen varianza homogenea
 
+H1: miu<150	
+H0: miu>=150
+alternative="greater"
+
+t.test()
+
+
 H0:
-son normales
-son independientes tienen varianza homogenea
+SI son normales
+SI son independientes tienen varianza homogenea
 
 
 si p<alfa:
 NO son normales
 NO son independientes
 NO tienen varianza homogenea
+
+
+~~~~~~~~~~~~~~~~~~~~+
+
+var.test(x1,x2)
