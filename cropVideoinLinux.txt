@@ -1,0 +1,1 @@
+ffmpeg -i "estadistics" -map 0 -default_mode infer_no_subs -ss 00:00:00 -to 00:30:05 -c copy "copy1.mp4"
